@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title> TEST </title>
+<meta charset="UTF=8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<script src="http://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="http://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<link  href="http://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"  rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link  href="http://fonts.googleapis.com/css?family=Fira+Sans+Condensed&display=swap"  rel="stylesheet">
+<link  href="http://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap"         rel="stylesheet">
+<link  href="http://image.flaticon.com/icons/png/128/189/189647.png"                   rel="shortcut icon" type="image/x-icon" >
+
+
+<style>
+
+    body { font-family: 'Fira Sans Condensed', 'Noto Sans KR', sans-serif; line-height: 2; }
+
+    @page                                                                  {  size:  A4  ;                                             }
+    @media  print  { html, body            { width: calc( 210mm - 20mm ); height: calc( 297mm - 20mm); } }
+    @media  screen {       body .container { width: calc( 210mm + 50mm );                              } }
+    
+      a {
+      color: #5D6975;
+      text-decoration: underline;
+      }
+      body {
+      position: relative;
+      width: 21cm;  
+      height: 29.7cm; 
+      margin: 0 auto; 
+      color: #001028;
+      background: #FFFFFF; 
+      font-family: Arial, sans-serif; 
+      font-size: 0.8em; 
+      font-family: Arial;
+      }
+      body { font-family: 'Fira Sans Condensed', 'Noto Sans KR', sans-serif; line-height: 2; }
+      @page                                 {  size:  A4  ;                                             }
+      @media print  { html, body            { width: calc( 210mm - 20mm ); height: calc( 297mm - 20mm); } }
+      @media screen {       body .container { width: calc( 210mm + 50mm );                              } }
+      header {
+      padding: 10px 0;
+      margin-bottom: 30px;
+      }
+      #logo {
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      }
+      #logo img {
+      width: 200px;
+      }
+      h1 {
+      border-top: 1px solid  #5D6975;
+      border-bottom: 1px solid  #5D6975;
+      color: #5D6975;
+      font-size: 2.4em;
+      line-height: 1.4em;
+      font-weight: normal;
+      text-align: center;
+      margin: 0 0 20px 0;
+      }
+      
+      #project span {
+      color: #5D6975;
+      width: 90px;
+      margin-right: 10px;
+      display: inline-block;
+      font-size: 0.8em;
+      }  
+      #company {
+      float: right;
+      text-align: right;
+      }  
+      #project div,
+      #company div {
+      white-space: nowrap;
+      }    
+      table {
+      width: 100%;
+      border-collapse: collapse;
+      border-spacing: 0;
+      margin-bottom: 20px;
+      }
+      
+      table th,
+      table td {
+      text-align: center;
+      font-size: 0.8rem;
+      }     
+      table th {
+      padding: 15px 15px 15px 0px;
+      color: #5D6975;
+      border-bottom: 1px solid #C1CED9;
+      white-space: nowrap;        
+      font-weight: normal;
+      }
+      table .creator,
+      table .sow,
+      table .desc {
+      text-align: left;
+      }     
+      table td {
+      padding: 15px 15px 15px 0px;
+      text-align: right;
+      font-size: 0.8em;
+      }
+    
+      table td.grand_total {
+      border-top: 1px solid #5D6975;
+      text-align: right;
+      }   
+      #notices .notice {
+      color: #5D6975;
+      font-size: 0.8em;
+      }  
+      footer {
+      color: #5D6975;
+      width: 100%;
+      height: 30px;
+      position: absolute;
+      bottom: 0;
+      border-top: 1px solid #C1CED9;
+      padding: 8px 0;
+      text-align: center;
+      }
+
+</style>
+</head>
+
+<body>
+<div id="my">
+    <header class="clearfix">
+        <div id="logo"></div>
+        <h1>QUOTATION</h1>
+        <div id="company">
+          <div>MANNY JOINT STOCK COMPANY</div>
+          <div>77 Doan Nhu Hai, Ward 12, District 4, HCM</div>
+          <div>(602) 519-0450</div>
+          <div>company@example.com</div>
+        </div>
+        <div id="project">
+            <div><span>Deal number</span> 1232</div>
+            <div><span>Company name</span> Samsung </div>
+            <div><span>Brand name</span> Galaxy </div>
+            <div><span>Project name</span> john@example.com</div>
+            <div><span>Duration</span> 2020- 2021</div>
+            <div><span>Exchange rate</span> 23200</div>
+          </div>
+    </header>
+
+    <table>
+        <thead>
+          <tr>
+            <th class="service">No</th>
+            <th >Creator</th>
+            <th>SOW</th>
+            <th class="desc">Description</th>
+            <th>UOM</th>
+            <th>Channel</th>
+            <th>Quantity</th>
+            <th>Unit Cost (USD)</th>
+            <th>TOTAL (USD)</th>
+            <th>TOTAL (VND)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="text-align:left; background-color: #F5F5F5;" colspan="10">  I. Services </td>
+          </tr>
+          <tr>
+            <td class="no"> 1 </td>
+            <td class="creator"> Misthi </td>
+            <td class="sow"> Fanpage post/ Instagram Post (1 image)</td>
+            <td class="desc"> Promotion for the product </td>
+            <td class="uom"></td>
+            <td class="channel"> Youtube </td>
+            <td class="quantity"> 1 </td>
+            <td class="unit_cost"> $1,040</td>
+            <td class="total_usd"> $1,040 </td>
+            <td class="total_vnd"> 20,040,000</td>
+          </tr>
+          <tr>
+            <td style="text-align:left; background-color: #F5F5F5;" colspan="10"> II. Account Management Fee </td>
+          </tr>
+          <tr>
+            <td class="no">1</td>
+            <td class="creator"> Misthi Account Management Fee </td>
+            <td class="sow"></td>
+            <td class="desc">table and clarify breif from client - collect feedbacks and manage internal team to deliver product on time</td>
+            <td class="uom">package</td>
+            <td class="channel">N/A</td>
+            <td class="quantity">1</td>
+            <td class="unit_cost">10%</td>
+            <td class="total_usd">$10</td>
+            <td class="total_vnd">232,600</td>
+          </tr>
+          <tr>
+            <td colspan="8">GRAND TOTAL (excl. VAT) </td>
+            <td class="total_usd">$5,200.00</td>
+            <td class="total_vnd">$5,200.00</td>
+          </tr>
+          <tr>
+            <td colspan="8">DISCOUNT (*Optional) </td>
+            <td class="total_usd">$0</td>
+            <td class="total_vnd">$0</td>
+          </tr>
+        
+          <tr>
+            <td colspan="8" class="grand_total">GRAND TOTAL(incl. VAT)</td>
+            <td class="grand_total">$6,500.00</td>
+            <td class="grand_total">$6,500.00</td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="notices">
+        <div>NOTICE:</div>
+        <div>
+          1. Payment term: 50% deposit of the quoted before project kick-off and 50% within 15 days after project ends. 
+          2. Timeline (tentative):- For script: 5 working days - For production: 5 - 7 working days after the script got approval
+          3. Cancellation fee: 3.1. For Social post: - After client receives caption and photo: 60% of the total cost - After client receives the revised caption and photo: 80% of the total cost - After client approves on the caption and photo: 100% of the total cost<span>
+          3.2. For Video/ livestream:
+          - After client receive the first script: 30% of the total cost
+          - After client receive the revised script: 40% of the total cost
+          - After client receives the first version of the video: 70% of the total cost
+          - After client receives the revised video following client's feedback on the first video version: 90% of the total cost          
+          - After client approves the revised video following client's feedback on the first video version: 100% of the total cost         
+          4. The additional fee will be required if:          
+          - Clients request to have more round of feedbacks.          
+          - For a photo/video shooting, every 2 hours exceed the number of hours specified in the quotation, the cost will be added 15% on the total cost for that photo/video shooting.                   
+          5. Client to provide:          
+          - Detailed brief, Facebook post caption and Youtube description          
+          - Product samples/ game items if needed          
+          - Gifts for mini game (if any)
+          6.Account management Fee :          
+          '- Take and clarify brief from client         
+          - Collect feedbacks and manage internal team to deliver product on time.         
+          - Provide timeline and prepare all the paperwork including CE, contract, invoice, liquidation          
+          - Proactively follow up and remind jobs to be done, paperworks, timeline and raise issues if occurs for discussions.
+          </div>
+      </div>
+
+</div>
+
+
+
+  <form id="docxform" method="post" action="gendocx.php">
+    <input type="hidden" id="htmlstring" name="htmlstring" value="">
+    <input type="submit" id="docx-button" value="Generate docx">
+  </form>
+ 
+  <script>
+    $('#docx-button').click(function(){
+      var string = $('#my').html()
+      $('#htmlstring').val( string );
+      console.log('string', string);
+    });
+  </script>
+</body>
+</html>
